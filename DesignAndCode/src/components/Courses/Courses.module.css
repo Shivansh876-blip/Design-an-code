@@ -1,0 +1,225 @@
+
+.container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  width: 1280px;
+  height: 100%;
+  margin-top: 400px;
+}
+
+.left {
+  width: 40%;
+  padding: 20px;
+  height: auto;
+}
+.left h3 {
+  line-height: 26px;
+  font-weight: 00;
+  font-size: 18px;
+}
+
+.left h1 {
+  margin-top: 15px;
+  font-size: 40px;
+}
+
+.left p {
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 110px;
+}
+
+.right .one ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.right .two input {
+  padding: 15px 50px;
+  border-radius: 40px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.itemss{
+  width: 1200px;
+  height: 60vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.ClassLeft,
+.ClassRight {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.items {
+  width: 50%;
+  height: 100%;
+  padding: 10px 20px;
+}
+
+.itemCon {
+  height: 90%;
+  overflow: scroll;
+}
+
+.itemCon::-webkit-scrollbar {
+  display: none;
+}
+
+.items ul li {
+  margin-top: 10px;
+  list-style: none;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.items ul li:hover {
+  background-color: rgb(173, 163, 163);
+}
+
+.card {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    347deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(195, 69, 252, 1) 0%,
+    rgba(72, 0, 255, 1) 48%
+  );
+  width: 50%;
+  height: 380px;
+  border-radius: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transition: all 0.4s ease;
+  transform: translate3D(0, -1px, 0) scale(1.08);
+}
+
+@media (max-width: 780px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+  .left h3 {
+    font-size: 15px;
+  }
+  .left h1 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .left p {
+    font-size: 15px;
+  }
+  .right {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .right .one ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .right .two input {
+    margin-top: -60px;
+    font-size: 12px;
+  }
+  .right .two{
+    margin: 0;
+    padding: 0;
+  }
+
+ 
+.FeaturedClass {
+  overflow: scroll;
+ border-radius: 20px;
+ 
+}
+.FeaturedClass::-webkit-scrollbar {
+  display: none; 
+}
+
+.itemss{
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+
+}
+
+.ClassLeft, .ClassRight {
+  min-width: 100vw; 
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+ box-shadow: none;
+ border: 1px solid rgba(158, 154, 154, 0.28);
+ 
+}
+  .card {
+    height: 250px;
+  }
+  .items {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+  }
+
+  .itemCon {
+    height: 90%;
+    overflow: scroll;
+  }
+
+  .itemCon::-webkit-scrollbar {
+    display: none;
+  }
+}

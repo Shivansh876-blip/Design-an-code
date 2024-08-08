@@ -1,0 +1,201 @@
+.main {
+  background: #4419db;
+  background: -webkit-linear-gradient(to right, #4bc0c8, #4419db, #4419db);
+  background: linear-gradient(to right, #4bc0c8, #4419db, #4419db);
+  width: 100%;
+  max-height: 90vh;
+}
+
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1200px;
+  padding: 30px 0;
+  background-color: transparent;
+}
+
+.left {
+  width: 20%;
+  height: 40px;
+}
+
+.right {
+  width: 80%;
+}
+
+.right ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.right ul li {
+  transition: border-radius 1s ease, background-color 1s ease;
+  cursor: pointer;
+  padding: 15px 35px;
+  border-radius: 10px;
+}
+
+.right ul li:hover {
+  background-color: gray;
+}
+
+.right ul li a {
+  font-size: 16px;
+  font-weight: 600;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.cross {
+  display: none;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 350px;
+}
+
+.sec1 {
+  width: 25%;
+  margin-top: 50px;
+}
+
+.sec1 h1 {
+  font-size: 60px;
+  color: #27016e;
+}
+
+.sec1 p {
+  margin: 20px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(36, 34, 34);
+}
+
+.sec1 button {
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.sec2 {
+  width: 70%;
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  top: -200px;
+  left: 50px;
+  z-index: 1;
+}
+
+.imgOne {
+  position: absolute;
+  top: -250px;
+  left: -30px;
+}
+
+.imgTwo {
+  position: absolute;
+  top: -250px;
+  left: 280px;
+}
+
+.imgFour {
+  position: absolute;
+  left: 500px;
+  bottom: -400px;
+}
+
+.imgFive {
+  position: absolute;
+  left: -30px;
+  bottom: -400px;
+}
+
+
+@media (max-width: 780px) {
+  .cross {
+    display: block;
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 11px;
+    z-index: 3;
+    top: 30px;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .main {
+    padding: 10px 20px;
+    max-height: 410px;
+    margin-bottom: 260px;
+  }
+
+  .NavBar {
+    height: 20px;
+  }
+  .content {
+    width: 100%;
+  }
+  .sec1 {
+    width: 100%;
+  }
+  .sec2 {
+    width: 10%;
+  }
+
+  .sec1 h1 {
+    font-size: 40px;
+  }
+
+  .sec1 p {
+    font-size: 14px;
+  }
+
+  .sec1 button {
+    padding: 18px;
+  }
+
+  .sec2 img {
+    display: none;
+  }
+}
+
+.More {
+  position: relative;
+}
+.more {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  background-color: red;
+  z-index: 3;
+  border-radius: 20px;
+  top: 60px;
+  left: -3px;
+  display: none;
+}
+
+.Sign {
+  position: relative;
+}
+.SignPage {
+  position: absolute;
+}
